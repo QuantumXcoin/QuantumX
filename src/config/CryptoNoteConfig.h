@@ -1,6 +1,7 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
+// Copyright (c) 2019, the QuantumX Developers
 //
 // Please see the included LICENSE file for more information.
 
@@ -68,7 +69,7 @@ namespace CryptoNote
             "GENESIS_COINBASE_TX_HEX must not be empty.");
 
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
-           You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
+           You can get this value by doing "print_block 2" in Quantumxd. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
         const uint64_t GENESIS_BLOCK_TIMESTAMP = 1512800692;
 
@@ -108,7 +109,7 @@ namespace CryptoNote
 
         const uint32_t MIXIN_LIMITS_V3_HEIGHT = 800000;
 
-        /* The mixin to use by default with zedwallet and turtle-service */
+        /* The mixin to use by default with zedwallet and Quantunx-service */
         /* DEFAULT_MIXIN_V0 is the mixin used before MIXIN_LIMITS_V1_HEIGHT is started */
         const uint64_t DEFAULT_MIXIN_V0 = 3;
 
